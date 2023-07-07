@@ -7,7 +7,16 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
     body, button, input  {
         font-family: 'Roboto', sans-serif;
+        ${(props) => `background-color: ${props.theme.background}`}
     }
 `
