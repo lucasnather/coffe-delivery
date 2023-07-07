@@ -17,6 +17,11 @@ export const GlobalStyle = createGlobalStyle`
 
     body, button, input  {
         font-family: 'Roboto', sans-serif;
-        ${(props) => `background-color: ${props.theme.background}`}
+        ${(props) => `background-color: ${props.theme.background}`};
+        font-weight: 400;
+    }
+
+    h1 {
+        font-family: 'Baloo 2', cursive;
     }
 `
