@@ -14,6 +14,7 @@ interface CoffeeProps {
 interface ContextProps {
   coffes: CoffeeProps[]
   setCoffes: React.Dispatch<React.SetStateAction<CoffeeProps[]>>
+  filteredList: CoffeeProps[]
 }
 
 export const CoffeeContext = createContext({} as ContextProps)
@@ -25,8 +26,10 @@ interface ChildrenProps {
 export function CoffeeProvider({ children }: ChildrenProps) {
   const [coffes, setCoffes] = useState<CoffeeProps[]>(products)
 
+  const filteredList = coffes.filter((coffee) => coffee.amount > 0)
+
   return (
-    <CoffeeContext.Provider value={{ coffes, setCoffes }}>
+    <CoffeeContext.Provider value={{ coffes, setCoffes, filteredList }}>
       {children}
     </CoffeeContext.Provider>
   )

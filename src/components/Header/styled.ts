@@ -33,5 +33,25 @@ export const ButtonLocate = styled(BaseButton)`
 `
 
 export const ButtonCart = styled(BaseButton)`
+  position: relative;
   ${(props) => `background: ${props.theme['yellow-light']}`};
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -8px;
+    margin-right: -8px;
+    height: 1rem;
+    width: 1.25rem;
+    padding: 0.6rem;
+    border-radius: 50%;
+
+    ${(props) => `background-color: ${props.theme['yellow-dark']}`};
+    ${(props) => `color: ${props.theme.white}`};
+  }
 `

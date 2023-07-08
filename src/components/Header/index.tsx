@@ -1,6 +1,8 @@
 import { MapPin, ShoppingCartSimple } from 'phosphor-react'
+import { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import Logo from '../../assets/logo.svg'
+import { CoffeeContext } from '../../contexts/CoffeeContext'
 import {
   ButtonCart,
   ButtonLocate,
@@ -9,6 +11,8 @@ import {
 } from './styled'
 
 export function Header() {
+  const { filteredList } = useContext(CoffeeContext)
+
   return (
     <HeaderContainer>
       <NavLink to="/">
@@ -29,6 +33,7 @@ export function Header() {
             <NavLink to="/checkout">
               <ButtonCart>
                 <ShoppingCartSimple size={22} color="#C47F17" weight="fill" />
+                {filteredList.length > 0 && <span>{filteredList.length}</span>}
               </ButtonCart>
             </NavLink>
           </li>

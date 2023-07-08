@@ -29,8 +29,6 @@ export function Cafes() {
     )
   }
 
-  console.log(coffes)
-
   return (
     <CoffeeContainer>
       <h2>Nossos Cafés</h2>
