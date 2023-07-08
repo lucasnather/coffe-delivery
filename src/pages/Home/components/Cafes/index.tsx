@@ -29,6 +29,21 @@ export function Cafes() {
     )
   }
 
+  function handleAmountDecrement(id: string) {
+    setCoffes(
+      coffes.map((coffee) => {
+        if (coffee.id === id) {
+          return {
+            ...coffee,
+            amount: coffee.amount - 1,
+          }
+        } else {
+          return coffee
+        }
+      }),
+    )
+  }
+
   return (
     <CoffeeContainer>
       <h2>Nossos Cafés</h2>
@@ -59,6 +74,7 @@ export function Cafes() {
                         left: 8,
                       }}
                       color="#8047F8"
+                      onClick={() => handleAmountDecrement(coffee.id)}
                     />
                     {coffee.amount}
                     <Plus
