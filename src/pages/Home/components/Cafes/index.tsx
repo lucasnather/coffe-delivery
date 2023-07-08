@@ -35,7 +35,7 @@ export function Cafes() {
         if (coffee.id === id) {
           return {
             ...coffee,
-            amount: coffee.amount - 1,
+            amount: coffee.amount <= 0 ? 0 : coffee.amount - 1,
           }
         } else {
           return coffee
