@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
     }
 
-    h1 {
+    h1, h3 {
         font-family: 'Baloo 2', cursive;
     }
 `
