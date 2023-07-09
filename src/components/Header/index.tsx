@@ -25,7 +25,7 @@ export function Header() {
             <NavLink to="/success">
               <ButtonLocate>
                 <MapPin size={22} color="#8047F8" weight="fill" />
-                Manaus
+                Manaus, AM
               </ButtonLocate>
             </NavLink>
           </li>
