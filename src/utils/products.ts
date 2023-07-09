@@ -21,7 +21,7 @@ export const products = [
     type: ['tradicional'],
     title: 'Expresso Tradicional',
     description: 'O tradicional café feito com água quente e grãos moídos',
-    price: 9.99,
+    price: 4.99,
     amount: 0,
   },
   {
@@ -30,7 +30,7 @@ export const products = [
     type: ['tradicional'],
     title: 'Expresso Americano',
     description: 'Expresso diluído, menos intenso que o tradicional',
-    price: 9.99,
+    price: 5.99,
     amount: 0,
   },
   {
@@ -39,7 +39,7 @@ export const products = [
     type: ['tradicional'],
     title: 'Expresso Cremoso',
     description: 'Café expresso tradicional com espuma cremosa',
-    price: 9.99,
+    price: 4.5,
     amount: 0,
   },
   {
@@ -48,7 +48,7 @@ export const products = [
     type: ['tradicional', 'gelado'],
     title: 'Expresso Gelado',
     description: 'Bebida preparada com café expresso e cubos de gelo',
-    price: 9.99,
+    price: 5.6,
     amount: 0,
   },
   {
@@ -57,7 +57,7 @@ export const products = [
     type: ['tradicional', 'com leite'],
     title: 'Café com Leite',
     description: 'Meio a meio de expresso tradicional com leite vaporizado',
-    price: 9.99,
+    price: 6.5,
     amount: 0,
   },
   {
@@ -67,7 +67,7 @@ export const products = [
     title: 'Latte',
     description:
       'Uma dose de café expresso com o dobro de leite e espuma cremosa',
-    price: 9.99,
+    price: 8,
     amount: 0,
   },
   {
@@ -77,7 +77,7 @@ export const products = [
     title: 'Capuccino',
     description:
       'Bebida com canela feita de doses iguais de café, leite e espuma',
-    price: 9.99,
+    price: 9.5,
     amount: 0,
   },
   {
@@ -105,7 +105,7 @@ export const products = [
     type: ['tradicional', 'com leite'],
     title: 'Chocolate Quente',
     description: 'Bebida feita com chocolate dissolvido no leite quente e café',
-    price: 9.99,
+    price: 11,
     amount: 0,
   },
   {
@@ -115,7 +115,7 @@ export const products = [
     title: 'Cubano',
     description:
       'Drink gelado de café expresso com rum, creme de leite e hortelã',
-    price: 9.99,
+    price: 12,
     amount: 0,
   },
   {
@@ -124,7 +124,7 @@ export const products = [
     type: ['especial'],
     title: 'Havaiano',
     description: 'Bebida adocicada preparada com café e leite de coco',
-    price: 9.99,
+    price: 12,
     amount: 0,
   },
   {
@@ -133,7 +133,7 @@ export const products = [
     type: ['especial'],
     title: 'Árabe',
     description: 'Bebida preparada com grãos de café árabe e especiarias',
-    price: 9.99,
+    price: 13,
     amount: 0,
   },
   {
@@ -142,7 +142,7 @@ export const products = [
     type: ['especial', 'alcoólico'],
     title: 'Irlandês',
     description: 'Bebida a base de café, uísque irlandês, açúcar e chantilly',
-    price: 9.99,
+    price: 15,
     amount: 0,
   },
 ]

@@ -41,7 +41,7 @@ export function Cafes() {
               <p>{coffee.description}</p>
 
               <PriceContainer>
-                <strong>R$ {coffee.price}</strong>
+                <strong>R$ {coffee.price.toFixed(2).replace('.', ',')}</strong>
 
                 <div>
                   <ButtonAmount>
