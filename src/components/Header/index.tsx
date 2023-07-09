@@ -25,7 +25,7 @@ export function Header() {
             <NavLink to="/success">
               <ButtonLocate>
                 <MapPin size={22} color="#8047F8" weight="fill" />
-                {form?.cidade}, {form?.uf}
+                {form !== undefined ? `${form?.cidade}, ${form?.uf}` : ''}
               </ButtonLocate>
             </NavLink>
           </li>

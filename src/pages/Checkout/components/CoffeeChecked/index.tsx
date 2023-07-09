@@ -79,7 +79,9 @@ export function CoffeeChecked() {
                       </ButtonRemove>
                     </ButtonsContainer>
                   </div>
-                  <PriceCoffee>R$ {coffee.price * coffee.amount}</PriceCoffee>
+                  <PriceCoffee>
+                    R$ {(coffee.price * coffee.amount).toFixed(2)}
+                  </PriceCoffee>
                 </ProductContainer>
               )
             })}
