@@ -1,5 +1,5 @@
 import { Banner } from './components/Banner'
-import { Cafes } from './components/Cafes'
+import { Cafes } from './components/Coffees'
 
 export function Home() {
   return (

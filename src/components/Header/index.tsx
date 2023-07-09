@@ -11,7 +11,7 @@ import {
 } from './styled'
 
 export function Header() {
-  const { filteredList } = useContext(CoffeeContext)
+  const { filteredList, form } = useContext(CoffeeContext)
 
   return (
     <HeaderContainer>
@@ -25,7 +25,7 @@ export function Header() {
             <NavLink to="/success">
               <ButtonLocate>
                 <MapPin size={22} color="#8047F8" weight="fill" />
-                Manaus, AM
+                {form?.cidade}, {form?.uf}
               </ButtonLocate>
             </NavLink>
           </li>
