@@ -1,3 +1,12 @@
+import { CoffeeChecked } from './components/CoffeeChecked'
+import { Form } from './components/Form'
+import { CheckoutContainer } from './styled'
+
 export function Checkout() {
-  return <h1>Checkout</h1>
+  return (
+    <CheckoutContainer>
+      <Form />
+      <CoffeeChecked />
+    </CheckoutContainer>
+  )
 }

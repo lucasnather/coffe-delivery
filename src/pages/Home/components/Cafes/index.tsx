@@ -12,36 +12,14 @@ import {
 } from './styled'
 
 export function Cafes() {
-  const { coffes, setCoffes } = useContext(CoffeeContext)
-
-  function handleAmountIncrement(id: string) {
-    setCoffes(
-      coffes.map((coffee) => {
-        if (coffee.id === id) {
-          return {
-            ...coffee,
-            amount: coffee.amount + 1,
-          }
-        } else {
-          return coffee
-        }
-      }),
-    )
-  }
+  const { coffes, amountDecrement, amountIncrement } = useContext(CoffeeContext)
 
   function handleAmountDecrement(id: string) {
-    setCoffes(
-      coffes.map((coffee) => {
-        if (coffee.id === id) {
-          return {
-            ...coffee,
-            amount: coffee.amount <= 0 ? 0 : coffee.amount - 1,
-          }
-        } else {
-          return coffee
-        }
-      }),
-    )
+    return amountDecrement(id)
+  }
+
+  function handleAmountIncrement(id: string) {
+    return amountIncrement(id)
   }
 
   return (
